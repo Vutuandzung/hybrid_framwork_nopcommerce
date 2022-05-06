@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="NopCommerce">
+<suite parallel="false" name="BankGuru">
   <test name="Run on Firefox">
     <classes>
-      <class name="com.nopcommerce.user.User_01_Register_Login"/>
+      <class name="com.bankguru.admin.Level_02_Register_Login_Base_Page_1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
