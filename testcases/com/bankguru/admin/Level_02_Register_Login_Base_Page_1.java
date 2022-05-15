@@ -31,9 +31,9 @@ public class Level_02_Register_Login_Base_Page_1 {
 
 	@Test
 	public void Login_01_Register_To_System() {
-		loginPageUrl = basePage.getCurrentUrl(driver);
+		loginPageUrl = basePage.getPageUrl(driver);
 		basePage.clickToElement(driver, "//a[text()='here']");
-		basePage.sendkyToElement(driver, "//input[@name='emailid']", getRandomEmail());
+		basePage.sendKeyToElement(driver, "//input[@name='emailid']", getRandomEmail());
 		basePage.clickToElement(driver, "//input[@name='btnLogin']");
 		userName = basePage.getElementText(driver, "//td[text()='User ID :']/following-sibling::td");
 		password = basePage.getElementText(driver, "//td[text()='Password :']/following-sibling::td");
@@ -42,8 +42,8 @@ public class Level_02_Register_Login_Base_Page_1 {
 	@Test
 	public void Login_02_Register_To_System() {
 		basePage.openPageUrl(driver, loginPageUrl);
-		basePage.sendkyToElement(driver, "//input[@name='uid']", userName);
-		basePage.sendkyToElement(driver, "//input[@name='password']", password);
+		basePage.sendKeyToElement(driver, "//input[@name='uid']", userName);
+		basePage.sendKeyToElement(driver, "//input[@name='password']", password);
 		basePage.clickToElement(driver, "//input[@name='btnLogin']");
 		String welcomeMessage = basePage.getElementText(driver, "//marquee[@class='heading3']");
 		Assert.assertEquals(welcomeMessage, "Welcome To Manager's Page of Guru99 Bank");
