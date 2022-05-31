@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="NopCommerce">
+	<parameter name="appUrl" value="https://demo.nopcommerce.com/" />
+	
+	
+	<test name="Run on Firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.nopcommerce.login.Level_03_Register_Login_Base_Page"/>
+		</classes>
+	</test>
+	
+	
+</suite> <!-- Suite -->

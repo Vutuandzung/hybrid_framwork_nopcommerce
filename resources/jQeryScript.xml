@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="NopCommerce">
+	<parameter name="appUrl" value="https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/" />
+	
+	
+	<test name="Run on Firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.jqueryscript.demo.Data_Table_Locator_Dynamic"/>
+		</classes>
+	</test>
+	
+	
+</suite> <!-- Suite -->
